@@ -139,6 +139,18 @@
       .hero-text h1 { font-size: 2rem; }
       .hero-images { margin-top: 2rem; }
     }
+    .logo img {
+  max-width: 768px;   /* Maximum width on large screens */
+  width: 100%;        /* Responsive: scales down on small screens */
+  height: auto;       /* Keeps aspect ratio */
+  display: block;     /* Removes extra space below image */
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 300px; /* Smaller logo on mobile */
+  }
+}
   </style>
 </head>
 <body>
